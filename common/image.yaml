@@ -98,18 +98,6 @@ actions:
     description: Unpack rootfs
     file: .rootfs/{{ $distro }}_{{ $suite }}{{ $repo_prefix }}_{{ $flavor }}.tar
     
-  - action: run
-    description: Copy rootfs to backup partition
-    command: |
-      set -e
-      echo "Copying rootfs to backup partition..."
-      mkdir -p /mnt/rootfs /mnt/rootfs_bck
-      mount /dev/disk/by-partlabel/rootfs /mnt/rootfs
-      mount /dev/disk/by-partlabel/rootfs_bck /mnt/rootfs_bck
-      rsync -a /mnt/rootfs/ /mnt/rootfs_bck/
-      umount /mnt/rootfs
-      umount /mnt/rootfs_bck
-      
   - action: filesystem-deploy
     description: Deploying filesystem onto image
     setup-fstab: true
@@ -321,3 +309,15 @@ actions:
     command: |
       set -e
       update-initramfs -u
+      
+  - action: run
+    description: Copy rootfs to backup partition
+    command: |
+      set -e
+      echo "Copying rootfs to backup partition..."
+      mkdir -p /mnt/rootfs /mnt/rootfs_bck
+      mount /dev/disk/by-partlabel/rootfs /mnt/rootfs
+      mount /dev/disk/by-partlabel/rootfs_bck /mnt/rootfs_bck
+      rsync -a /mnt/rootfs/ /mnt/rootfs_bck/
+      umount /mnt/rootfs
+      umount /mnt/rootfs_bck
