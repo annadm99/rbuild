@@ -89,6 +89,17 @@ actions:
   - action: recipe
     description: Clean up rootfs
     recipe: scripts/clean.yaml
+    
+  - action: run
+    description: Copy rootfs to backup partition
+    command: |
+      set -e
+      echo "Copying rootfs to backup partition..."
+      mount /dev/disk/by-partlabel/rootfs /mnt/rootfs
+      mount /dev/disk/by-partlabel/rootfs_backup /mnt/rootfs_backup
+      rsync -a /mnt/rootfs/ /mnt/rootfs_backup/
+      umount /mnt/rootfs
+      umount /mnt/rootfs_backup
 
   - action: pack
     description: Save rootfs
