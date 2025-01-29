@@ -103,6 +103,7 @@ actions:
     command: |
       set -e
       echo "Copying rootfs to backup partition..."
+      mkdir -p /mnt/rootfs /mnt/rootfs_bck
       mount /dev/disk/by-partlabel/rootfs /mnt/rootfs
       mount /dev/disk/by-partlabel/rootfs_bck /mnt/rootfs_bck
       rsync -a /mnt/rootfs/ /mnt/rootfs_bck/
