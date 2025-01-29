@@ -71,6 +71,9 @@ actions:
       - mountpoint: /boot/efi
         partition: boot
         options: [ x-systemd.automount ]
+      - mountpoint: /backup  # Backup rootfs
+        partition: rootfs_bck
+        options: [ noauto ] 
     partitions:
       - name: config
         fs: vfat
