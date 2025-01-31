@@ -138,3 +138,10 @@ actions:
       - radxa-udev
       - rsetup
       - rsetup-config-first-boot
+      
+  - action: apt
+    description: Install S3DP needed packages
+    packages:
+      - libubootenv-tool
+      - python3-venv
+      - python3-dev
