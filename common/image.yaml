@@ -251,7 +251,7 @@ actions:
     chroot: true
     command: |
       set -e
-      echo "/dev/mmcblk2 0x3f8000 0x8000" > /etc/fw_env.config
+      echo "/dev/mmcblk1 0x3f8000 0x8000" > /etc/fw_env.config
       
   - action: run
     description: Product specific setup
