@@ -71,9 +71,6 @@ actions:
       - mountpoint: /boot/efi
         partition: boot
         options: [ x-systemd.automount ]
-      - mountpoint: /backup  # Backup rootfs
-        partition: rootfs_bck
-        options: [ noauto ] 
     partitions:
       - name: config
         fs: vfat
@@ -87,12 +84,8 @@ actions:
       - name: rootfs
         fs: ext4
         start: {{ $efi_end }}
-        end: 50%
-        flags: [ boot ]
-      - name: rootfs_bck
-        fs: ext4
-        start: 50%
         end: 100%
+        flags: [ boot ]
 
   - action: unpack
     description: Unpack rootfs
@@ -103,8 +96,6 @@ actions:
     setup-fstab: true
     # u-boot-menu will add root= in append for us
     setup-kernel-cmdline: false
-    additional-entries:
-      - "/dev/disk/by-partlabel/rootfs_bck /backup ext4 defaults,noauto 0 2"
 
   - action: apt
     description: Install task-{{ $board }} package
@@ -319,15 +310,4 @@ actions:
     command: |
       set -e
       update-initramfs -u
-      
-  - action: run
-    description: Copy rootfs to backup partition
-    command: |
-      set -e
-      echo "Copying rootfs to backup partition..."
-      mkdir -p /mnt/rootfs /mnt/rootfs_bck
-      mount /dev/disk/by-partlabel/rootfs /mnt/rootfs
-      mount /dev/disk/by-partlabel/rootfs_bck /mnt/rootfs_bck
-      rsync -a /mnt/rootfs/ /mnt/rootfs_bck/
-      umount /mnt/rootfs
-      umount /mnt/rootfs_bck
+
