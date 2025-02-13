@@ -236,11 +236,11 @@ actions:
     variables:
       overlay: {{ $overlay }}
 
+{{ end }}
   - action: recipe
     description: Enable custom overlay
     recipe: scripts/enable_custom_overlay.yaml
-
-{{ end }}
+    
   - action: run
     description: Create custom configuration
     chroot: true
