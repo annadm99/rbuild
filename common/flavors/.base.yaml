@@ -136,8 +136,8 @@ actions:
       - radxa-firmware
       - radxa-otgutils
       - radxa-udev
-      - rsetup
-      - rsetup-config-first-boot
+      - ../custom_packages/rsetup/rsetup_0.4.12_all.deb
+      - ../custom_packages/rsetup/rsetup-config-first-boot_0.4.12_all.deb
       
   - action: apt
     description: Install S3DP needed packages
