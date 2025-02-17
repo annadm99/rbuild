@@ -1,0 +1,59 @@
+Format: 1.8
+Date: Fri, 10 Jan 2025 03:30:25 +0000
+Source: rsetup
+Binary: rsetup rsetup-config-aic8800-ttys1 rsetup-config-first-boot rsetup-config-lan-led-enp1s0 rsetup-config-lan-led-eth0 rsetup-config-rgb0-rainbow rsetup-config-thermal-governor-step-wise rsetup-config-wan-led-enp1s0 rsetup-config-wan-led-eth0
+Architecture: all
+Version: 0.4.12
+Distribution: jammy
+Urgency: medium
+Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
+Changed-By: "Radxa Computer Co., Ltd" <dev@radxa.com>
+Description:
+ rsetup     - Radxa system setup utility
+ rsetup-config-aic8800-ttys1 - Radxa system config - Attach AIC8800 Bluetooth on /dev/ttyS1
+ rsetup-config-first-boot - Radxa system config - First boot configuration
+ rsetup-config-lan-led-enp1s0 - Radxa system config - Set lan-led LED's netdev to enp1s0
+ rsetup-config-lan-led-eth0 - Radxa system config - Set lan-led LED's netdev to eth0
+ rsetup-config-rgb0-rainbow - Radxa system config - Set rgb0 LED's pattern to rainbow
+ rsetup-config-thermal-governor-step-wise - Radxa system config - Set thermal_governor to step_wise
+ rsetup-config-wan-led-enp1s0 - Radxa system config - Set wan-led LED's netdev to enp1s0
+ rsetup-config-wan-led-eth0 - Radxa system config - Set wan-led LED's netdev to eth0
+Changes:
+ rsetup (0.4.12) jammy; urgency=medium
+ .
+   [ Chen Jiali ]
+   * refactor: change __hardware_gstreamer_test_picture to automatic stop
+   * fix: user: remove checklist_is_selection_empty for __user_enable_auto_login
+Checksums-Sha1:
+ c9ebe72fa5ec8c749101c56eb62e9e1bf2215eb1 7536 rsetup-config-aic8800-ttys1_0.4.12_all.deb
+ 2b67da94a7c3ec4ef38b529fca200ad4962e33ea 8324 rsetup-config-first-boot_0.4.12_all.deb
+ 11e9f396be7881e480ac6c410437387542f67c7a 7476 rsetup-config-lan-led-enp1s0_0.4.12_all.deb
+ c11f6ef4f8f8646d4768d21da902edb6860b747d 7476 rsetup-config-lan-led-eth0_0.4.12_all.deb
+ cbb03f37b3ca85f25173581456b9376545d54947 7516 rsetup-config-rgb0-rainbow_0.4.12_all.deb
+ ec782ca8efff0b6ccadca5097dc67a72774b5a5c 7432 rsetup-config-thermal-governor-step-wise_0.4.12_all.deb
+ 1f7d40cb614b5f0f2cb5e39cd9b2b2be738e3339 7472 rsetup-config-wan-led-enp1s0_0.4.12_all.deb
+ 3332cebf59fb8515f42db2c074c12f855fae7a91 7476 rsetup-config-wan-led-eth0_0.4.12_all.deb
+ 5626dc701c1b906dbdd5e15451bf9e89de59e0f5 28800 rsetup_0.4.12_all.deb
+ bd8bde8e7f2467d80471510993a3809db6245fad 13913 rsetup_0.4.12_amd64.buildinfo
+Checksums-Sha256:
+ 29fe38f4039c19e975b16c7a456dece471e5994fa85bdd7cc8c5534df96daa2c 7536 rsetup-config-aic8800-ttys1_0.4.12_all.deb
+ 42e47fd9d4b327c19fca8aeac865bb93c73bad126bca7c0d876c05c9d0d3a270 8324 rsetup-config-first-boot_0.4.12_all.deb
+ 70d201bb2ac85bd089828ee47cef707842d23709b1a649966f26d8815ea0f47b 7476 rsetup-config-lan-led-enp1s0_0.4.12_all.deb
+ acb9b873029d93f2fa75bf6e63d2478ea2101651611c334ffaaacaf6be50045a 7476 rsetup-config-lan-led-eth0_0.4.12_all.deb
+ 4509dbc8ff42e4533f40af639c5a69711725e2f2b88bc15a7e0c08e28d03a3e5 7516 rsetup-config-rgb0-rainbow_0.4.12_all.deb
+ 223c83522039794996332afbe489df365652c0cb20b148d3bd9e0a5afea4739c 7432 rsetup-config-thermal-governor-step-wise_0.4.12_all.deb
+ 6baac254b55b3f3c7cca13fadde323e5b29a59fb525581d48c897d6ec20d1594 7472 rsetup-config-wan-led-enp1s0_0.4.12_all.deb
+ d4738c66068222bb53019b9eddb7551f1890963b9f583fdf47604d8381476273 7476 rsetup-config-wan-led-eth0_0.4.12_all.deb
+ 0b125aa608f27e7d8678c8f6f314bfe3460f0c32ebcedc640f56c78db4b219d6 28800 rsetup_0.4.12_all.deb
+ b6c6e9596b9f315954355f285248b14b43fd2b79988cb5f6010375a2cef69288 13913 rsetup_0.4.12_amd64.buildinfo
+Files:
+ 4058a908c1bf21fc0b283a2a97f1c3a6 7536 admin standard rsetup-config-aic8800-ttys1_0.4.12_all.deb
+ e9c63501bab51cf1371cbf17e2179ce4 8324 admin standard rsetup-config-first-boot_0.4.12_all.deb
+ dab762e23c9fcaa109a35be727a1e46c 7476 admin standard rsetup-config-lan-led-enp1s0_0.4.12_all.deb
+ 4f3dd67c74d32a77b38b26325b6c4426 7476 admin standard rsetup-config-lan-led-eth0_0.4.12_all.deb
+ 4fe9c302b3ac82387b7dcc37ab73eba8 7516 admin standard rsetup-config-rgb0-rainbow_0.4.12_all.deb
+ d80b1911685acab8b27874e914e520c3 7432 admin standard rsetup-config-thermal-governor-step-wise_0.4.12_all.deb
+ 49aa4bf58b994b4f02f9c678af1d27c7 7472 admin standard rsetup-config-wan-led-enp1s0_0.4.12_all.deb
+ 0c7ada89c3db90656667973e1f73db74 7476 admin standard rsetup-config-wan-led-eth0_0.4.12_all.deb
+ db6cbd1429249c5c4fd7707114475940 28800 admin standard rsetup_0.4.12_all.deb
+ 1c34420788277cd723b56257479f85e2 13913 admin standard rsetup_0.4.12_amd64.buildinfo
