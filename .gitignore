@@ -8,3 +8,5 @@ common/.packages
 /.vscode*
 /.rbuild-config
 /book
+
+!*/common/custom_packages
