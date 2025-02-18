@@ -141,8 +141,8 @@ actions:
     description: Install custom packages, rsetup
     chroot: true
     command: |
-      dpkg -i --force-overwrite /custom_packages/rsetup/rsetup_0.4.12_all.deb
-      dpkg -i --force-overwrite /custom_packages/rsetup/rsetup-config-first-boot_0.4.12_all.deb
+      dpkg -i --force-overwrite custom_packages/rsetup/rsetup_0.4.12_all.deb
+      dpkg -i --force-overwrite custom_packages/rsetup/rsetup-config-first-boot_0.4.12_all.deb
       apt-get update
       apt --fix-broken install -y
 
