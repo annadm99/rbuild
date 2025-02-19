@@ -228,6 +228,12 @@ actions:
 
 {{ end }}
 
+  - action: recipe
+    description: Install custom rsetup package
+    recipe: scripts/hack_install_deb.yaml
+    variables:
+      name: {{ $kernel_dbg }}
+
 {{ if $overlay }}
 
   - action: recipe
