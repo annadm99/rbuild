@@ -436,8 +436,8 @@ main() {
     }
     copy_custom_firmware() {
         echo "Using custom firmware for rsetup ..."
-        cp  "$SCRIPT_DIR/common/custom_packages/rsetup/rsetup_0.4.12_all.deb" "$SCRIPT_DIR/common/.packages/rsetup"
-        cp  "$SCRIPT_DIR/common/custom_packages/rsetup/rsetup-config-first-boot_0.4.12_all.deb" "$SCRIPT_DIR/common/.packages/rsetup_first_boot"
+        cp  "$SCRIPT_DIR/common/custom_packages/rsetup/rsetup_0.4.12_all.deb" "$SCRIPT_DIR/common/.packages/rsetup.deb"
+        cp  "$SCRIPT_DIR/common/custom_packages/rsetup/rsetup-config-first-boot_0.4.12_all.deb" "$SCRIPT_DIR/common/.packages/rsetup_first_boot.deb"
     }
     while true
     do
