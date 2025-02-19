@@ -9,4 +9,4 @@ common/.packages
 /.rbuild-config
 /book
 
-!*/common/custom_packages
+!*/common/flavors/custom_packages/rsetup
