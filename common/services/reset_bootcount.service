@@ -1,1 +1,12 @@
+[Unit]
+Description=Reset Bootcount
+After=network.target
+
+[Service]
+ExecStart=/home/radxa/reset_bootcount.sh
+User=root
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
 
