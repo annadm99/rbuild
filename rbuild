@@ -544,6 +544,9 @@ main() {
         esac
     done
 
+    #add rsetup custom package
+    copy_custom_firmware
+
     if (( EUID == 0 )) && ! "$RBUILD_AS_ROOT"
     then
         error $EXIT_RBUILD_AS_ROOT
