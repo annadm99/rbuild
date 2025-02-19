@@ -152,3 +152,9 @@ actions:
       - libubootenv-tool
       - python3-venv
       - python3-dev
+      - device-tree-compiler
+      - gdisk
+      - jq
+      - librtui
+      - parted
+      - python3-yaml
