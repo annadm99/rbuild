@@ -135,9 +135,9 @@ actions:
   
   - action: recipe
     description: Install custom rsetup package
-    recipe: scripts/custom_hack_install_deb.yaml
+    recipe: scripts/hack_install_deb.yaml
     variables:
-      name: "rsetup/rsetup_0.4.12_all.deb"
+      name: "rsetup.deb"
       
   - action: recipe
     description: Install base packages
