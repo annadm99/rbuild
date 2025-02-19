@@ -228,12 +228,6 @@ actions:
 
 {{ end }}
 
-  - action: recipe
-    description: Install custom rsetup package
-    recipe: scripts/custom_hack_install_deb.yaml
-    variables:
-      name: "rsetup/rsetup_0.4.12_all.deb"
-
 {{ if $overlay }}
 
   - action: recipe
