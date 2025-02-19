@@ -132,12 +132,6 @@ actions:
       suite: {{ $suite }}{{ $repo_prefix }}
       repo: {{ $suite }}{{ $repo_prefix }}
       radxa_mirror: {{ $radxa_mirror }}
-  
-  - action: recipe
-    description: Install custom rsetup package
-    recipe: scripts/hack_install_deb.yaml
-    variables:
-      name: "rsetup.deb"
       
   - action: recipe
     description: Install base packages
@@ -145,6 +139,12 @@ actions:
     variables:
       distro: {{ $distro }}
       suite: {{ $suite }}
+      
+  - action: recipe
+    description: Install custom rsetup package
+    recipe: scripts/hack_install_deb.yaml
+    variables:
+      name: "rsetup.deb"
 
   - action: recipe
     description: Clean up rootfs
