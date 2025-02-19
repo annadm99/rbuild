@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Always check if the upgrade_available var is set
+# to reduce write cycles to the uenv.
+ISUPGRADING=$(fw_printenv upgrade_available | awk -F'=' '{print $2}')
+echo "upgrade_available=$ISUPGRADING"
+if [ -z "$ISUPGRADING" ]
+then
+    echo "No RootFs update pending"
+else
+    echo "RootFs update pending, verifying system"
+    #TO DO
+    
+    # Perform extra checks here.
+    # If anything went wrong, reboot again until the bootlimit is reached
+    # which triggers a rollback of the RootFs
+    
+    fw_setenv upgrade_available
+    fw_setenv bootcount 0
+fi
