@@ -8,5 +8,6 @@ common/.packages
 /.vscode*
 /.rbuild-config
 /book
+tmp_file
 
-!common/flavors/custom_packages/**/*.deb
+!common/custom_packages/**/*.deb
