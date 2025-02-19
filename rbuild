@@ -434,6 +434,11 @@ main() {
         cp "$1" "$SCRIPT_DIR/common/.packages/$(basename "$1")"
         RBUILD_FIRMWARE="$(basename $1)"
     }
+    copy_custom_firmware() {
+        echo "Using custom firmware for rsetup ..."
+        cp  "$SCRIPT_DIR/common/custom_packages/rsetup/rsetup_0.4.12_all.deb" "$SCRIPT_DIR/common/.packages/rsetup"
+        cp  "$SCRIPT_DIR/common/custom_packages/rsetup/rsetup-config-first-boot_0.4.12_all.deb" "$SCRIPT_DIR/common/.packages/rsetup_first_boot"
+    }
     while true
     do
         TEMP="$1"
