@@ -145,6 +145,12 @@ actions:
     recipe: scripts/hack_install_deb.yaml
     variables:
       name: "rsetup.deb" "rsetup_first_boot.deb"
+      
+  - action: recipe
+    description: Install custom rsetup first boot package
+    recipe: scripts/hack_install_deb.yaml
+    variables:
+      name: "rsetup_first_boot.deb"
 
   - action: recipe
     description: Clean up rootfs
