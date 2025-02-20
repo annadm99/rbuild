@@ -216,7 +216,7 @@ perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 	make -j2 "INSTALL=install --strip-program=true"
 make[1]: Entering directory '/home/adot/rsetup'
 pandoc "src/usr/share/man/man8/rsetup.8.md" -o "src/usr/share/man/man8/rsetup.8" --from markdown --to man -s
-echo -e "git clone https://github.com/annadm99/rsetup.git\ngit checkout 9c884f527b45e067d9fd7e69fd0a55f86bbcbfd7" > "src/SOURCE"
+echo -e "git clone https://github.com/annadm99/rsetup.git\ngit checkout 75ad739e7080d6c1af42d45d0099393d44627714" > "src/SOURCE"
 make[1]: Leaving directory '/home/adot/rsetup'
    dh_auto_test
 perl: warning: Setting locale failed.
@@ -497,6 +497,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 perl: warning: Setting locale failed.
+perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
@@ -512,6 +513,22 @@ perl: warning: Please check that your locale settings:
 	LANG = "en_US.UTF-8"
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "ca_ES.UTF-8",
+	LC_NUMERIC = "ca_ES.UTF-8",
+	LC_ADDRESS = "ca_ES.UTF-8",
+	LC_MONETARY = "ca_ES.UTF-8",
+	LC_TIME = "ca_ES.UTF-8",
+	LC_TELEPHONE = "ca_ES.UTF-8",
+	LC_MEASUREMENT = "ca_ES.UTF-8",
+	LC_PAPER = "ca_ES.UTF-8",
+	LC_IDENTIFICATION = "ca_ES.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+perl: warning: Setting locale failed.
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
@@ -545,23 +562,6 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 perl: warning: Setting locale failed.
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_NAME = "ca_ES.UTF-8",
-	LC_NUMERIC = "ca_ES.UTF-8",
-	LC_ADDRESS = "ca_ES.UTF-8",
-	LC_MONETARY = "ca_ES.UTF-8",
-	LC_TIME = "ca_ES.UTF-8",
-	LC_TELEPHONE = "ca_ES.UTF-8",
-	LC_MEASUREMENT = "ca_ES.UTF-8",
-	LC_PAPER = "ca_ES.UTF-8",
-	LC_IDENTIFICATION = "ca_ES.UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
@@ -593,6 +593,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 perl: warning: Setting locale failed.
+perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
@@ -608,7 +609,6 @@ perl: warning: Please check that your locale settings:
 	LANG = "en_US.UTF-8"
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
@@ -728,8 +728,6 @@ perl: warning: Please check that your locale settings:
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
 	LC_NAME = "ca_ES.UTF-8",
@@ -744,6 +742,8 @@ perl: warning: Please check that your locale settings:
 	LANG = "en_US.UTF-8"
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
 	LC_NAME = "ca_ES.UTF-8",
@@ -1050,13 +1050,13 @@ perl: warning: Please check that your locale settings:
 	LANG = "en_US.UTF-8"
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-dpkg-deb: building package 'rsetup' in '../rsetup_0.4.12_all.deb'.
 dpkg-deb: building package 'rsetup-config-wan-led-eth0' in '../rsetup-config-wan-led-eth0_0.4.12_all.deb'.
+dpkg-deb: building package 'rsetup' in '../rsetup_0.4.12_all.deb'.
 dpkg-deb: building package 'rsetup-config-wan-led-enp1s0' in '../rsetup-config-wan-led-enp1s0_0.4.12_all.deb'.
-dpkg-deb: building package 'rsetup-config-thermal-governor-step-wise' in '../rsetup-config-thermal-governor-step-wise_0.4.12_all.deb'.
 dpkg-deb: building package 'rsetup-config-lan-led-eth0' in '../rsetup-config-lan-led-eth0_0.4.12_all.deb'.
-dpkg-deb: building package 'rsetup-config-first-boot' in '../rsetup-config-first-boot_0.4.12_all.deb'.
+dpkg-deb: building package 'rsetup-config-thermal-governor-step-wise' in '../rsetup-config-thermal-governor-step-wise_0.4.12_all.deb'.
 dpkg-deb: building package 'rsetup-config-lan-led-enp1s0' in '../rsetup-config-lan-led-enp1s0_0.4.12_all.deb'.
+dpkg-deb: building package 'rsetup-config-first-boot' in '../rsetup-config-first-boot_0.4.12_all.deb'.
 dpkg-deb: building package 'rsetup-config-aic8800-ttys1' in '../rsetup-config-aic8800-ttys1_0.4.12_all.deb'.
 dpkg-deb: building package 'rsetup-config-rgb0-rainbow' in '../rsetup-config-rgb0-rainbow_0.4.12_all.deb'.
 make[1]: Leaving directory '/home/adot/rsetup'
