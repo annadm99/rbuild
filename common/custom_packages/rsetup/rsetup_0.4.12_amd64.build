@@ -216,7 +216,7 @@ perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 	make -j2 "INSTALL=install --strip-program=true"
 make[1]: Entering directory '/home/adot/rsetup'
 pandoc "src/usr/share/man/man8/rsetup.8.md" -o "src/usr/share/man/man8/rsetup.8" --from markdown --to man -s
-echo -e "git clone https://github.com/annadm99/rsetup.git\ngit checkout e29048a9f89e0b61f84329bfe305df11324e6bb0" > "src/SOURCE"
+echo -e "git clone https://github.com/annadm99/rsetup.git\ngit checkout ce8c6d0b9142bf220eb3aabeffa1f548a3795ede" > "src/SOURCE"
 make[1]: Leaving directory '/home/adot/rsetup'
    dh_auto_test
 perl: warning: Setting locale failed.
@@ -497,6 +497,54 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 perl: warning: Setting locale failed.
+perl: warning: Setting locale failed.
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "ca_ES.UTF-8",
+	LC_NUMERIC = "ca_ES.UTF-8",
+	LC_ADDRESS = "ca_ES.UTF-8",
+	LC_MONETARY = "ca_ES.UTF-8",
+	LC_TIME = "ca_ES.UTF-8",
+	LC_TELEPHONE = "ca_ES.UTF-8",
+	LC_MEASUREMENT = "ca_ES.UTF-8",
+	LC_PAPER = "ca_ES.UTF-8",
+	LC_IDENTIFICATION = "ca_ES.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "ca_ES.UTF-8",
+	LC_NUMERIC = "ca_ES.UTF-8",
+	LC_ADDRESS = "ca_ES.UTF-8",
+	LC_MONETARY = "ca_ES.UTF-8",
+	LC_TIME = "ca_ES.UTF-8",
+	LC_TELEPHONE = "ca_ES.UTF-8",
+	LC_MEASUREMENT = "ca_ES.UTF-8",
+	LC_PAPER = "ca_ES.UTF-8",
+	LC_IDENTIFICATION = "ca_ES.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "ca_ES.UTF-8",
+	LC_NUMERIC = "ca_ES.UTF-8",
+	LC_ADDRESS = "ca_ES.UTF-8",
+	LC_MONETARY = "ca_ES.UTF-8",
+	LC_TIME = "ca_ES.UTF-8",
+	LC_TELEPHONE = "ca_ES.UTF-8",
+	LC_MEASUREMENT = "ca_ES.UTF-8",
+	LC_PAPER = "ca_ES.UTF-8",
+	LC_IDENTIFICATION = "ca_ES.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
@@ -545,55 +593,6 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 perl: warning: Setting locale failed.
-perl: warning: Setting locale failed.
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_NAME = "ca_ES.UTF-8",
-	LC_NUMERIC = "ca_ES.UTF-8",
-	LC_ADDRESS = "ca_ES.UTF-8",
-	LC_MONETARY = "ca_ES.UTF-8",
-perl: warning: Please check that your locale settings:
-	LC_TIME = "ca_ES.UTF-8",
-	LANGUAGE = (unset),
-	LC_TELEPHONE = "ca_ES.UTF-8",
-	LC_ALL = (unset),
-	LC_MEASUREMENT = "ca_ES.UTF-8",
-	LC_NAME = "ca_ES.UTF-8",
-	LC_PAPER = "ca_ES.UTF-8",
-	LC_IDENTIFICATION = "ca_ES.UTF-8",
-	LC_NUMERIC = "ca_ES.UTF-8",
-	LANG = "en_US.UTF-8"
-	LC_ADDRESS = "ca_ES.UTF-8",
-    are supported and installed on your system.
-	LC_MONETARY = "ca_ES.UTF-8",
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-	LC_TIME = "ca_ES.UTF-8",
-	LC_TELEPHONE = "ca_ES.UTF-8",
-	LC_MEASUREMENT = "ca_ES.UTF-8",
-perl: warning: Please check that your locale settings:
-	LC_PAPER = "ca_ES.UTF-8",
-	LC_IDENTIFICATION = "ca_ES.UTF-8",
-	LANGUAGE = (unset),
-	LANG = "en_US.UTF-8"
-	LC_ALL = (unset),
-    are supported and installed on your system.
-	LC_NAME = "ca_ES.UTF-8",
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-	LC_NUMERIC = "ca_ES.UTF-8",
-	LC_ADDRESS = "ca_ES.UTF-8",
-	LC_MONETARY = "ca_ES.UTF-8",
-	LC_TIME = "ca_ES.UTF-8",
-	LC_TELEPHONE = "ca_ES.UTF-8",
-	LC_MEASUREMENT = "ca_ES.UTF-8",
-	LC_PAPER = "ca_ES.UTF-8",
-	LC_IDENTIFICATION = "ca_ES.UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-perl: warning: Setting locale failed.
-perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
@@ -608,8 +607,9 @@ perl: warning: Please check that your locale settings:
 	LC_IDENTIFICATION = "ca_ES.UTF-8",
 	LANG = "en_US.UTF-8"
     are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
 	LC_NAME = "ca_ES.UTF-8",
@@ -727,7 +727,13 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 perl: warning: Setting locale failed.
+perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+perl: warning: Please check that your locale settings:
+	LC_NAME = "ca_ES.UTF-8",
+	LC_NUMERIC = "ca_ES.UTF-8",
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
 	LC_NAME = "ca_ES.UTF-8",
@@ -741,14 +747,8 @@ perl: warning: Please check that your locale settings:
 	LC_IDENTIFICATION = "ca_ES.UTF-8",
 	LANG = "en_US.UTF-8"
     are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_NAME = "ca_ES.UTF-8",
-	LC_NUMERIC = "ca_ES.UTF-8",
 	LC_ADDRESS = "ca_ES.UTF-8",
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
 	LC_MONETARY = "ca_ES.UTF-8",
 	LC_TIME = "ca_ES.UTF-8",
 	LC_TELEPHONE = "ca_ES.UTF-8",
@@ -956,6 +956,11 @@ perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
 	LC_ALL = (unset),
 	LC_TIME = "ca_ES.UTF-8",
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "ca_ES.UTF-8",
 	LC_MONETARY = "ca_ES.UTF-8",
 	LC_ADDRESS = "ca_ES.UTF-8",
 	LC_TELEPHONE = "ca_ES.UTF-8",
@@ -967,11 +972,6 @@ perl: warning: Please check that your locale settings:
 	LANG = "en_US.UTF-8"
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_TIME = "ca_ES.UTF-8",
 	LC_MONETARY = "ca_ES.UTF-8",
 	LC_ADDRESS = "ca_ES.UTF-8",
 	LC_TELEPHONE = "ca_ES.UTF-8",

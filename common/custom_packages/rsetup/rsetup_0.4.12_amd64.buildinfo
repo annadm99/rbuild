@@ -5,37 +5,37 @@ Architecture: all
 Version: 0.4.12
 Checksums-Md5:
  4058a908c1bf21fc0b283a2a97f1c3a6 7536 rsetup-config-aic8800-ttys1_0.4.12_all.deb
- b03196c43f5f6655b81e0e55381fc9bc 8236 rsetup-config-first-boot_0.4.12_all.deb
+ 2afa8c42b361f6c6051057195c8836f7 8248 rsetup-config-first-boot_0.4.12_all.deb
  dab762e23c9fcaa109a35be727a1e46c 7476 rsetup-config-lan-led-enp1s0_0.4.12_all.deb
  4f3dd67c74d32a77b38b26325b6c4426 7476 rsetup-config-lan-led-eth0_0.4.12_all.deb
  4fe9c302b3ac82387b7dcc37ab73eba8 7516 rsetup-config-rgb0-rainbow_0.4.12_all.deb
  d80b1911685acab8b27874e914e520c3 7432 rsetup-config-thermal-governor-step-wise_0.4.12_all.deb
  49aa4bf58b994b4f02f9c678af1d27c7 7472 rsetup-config-wan-led-enp1s0_0.4.12_all.deb
  0c7ada89c3db90656667973e1f73db74 7476 rsetup-config-wan-led-eth0_0.4.12_all.deb
- 51911cac1512ed02d8761345592aa224 28988 rsetup_0.4.12_all.deb
+ f5fae9d64c1667d6414583d39019b7ac 28972 rsetup_0.4.12_all.deb
 Checksums-Sha1:
  c9ebe72fa5ec8c749101c56eb62e9e1bf2215eb1 7536 rsetup-config-aic8800-ttys1_0.4.12_all.deb
- 357c57d5efc8c55c1f2218be1a5c5b9909cc3ba5 8236 rsetup-config-first-boot_0.4.12_all.deb
+ 37cb1cf0cd3a0244dd5a0b24e800a37e6aa7f15f 8248 rsetup-config-first-boot_0.4.12_all.deb
  11e9f396be7881e480ac6c410437387542f67c7a 7476 rsetup-config-lan-led-enp1s0_0.4.12_all.deb
  c11f6ef4f8f8646d4768d21da902edb6860b747d 7476 rsetup-config-lan-led-eth0_0.4.12_all.deb
  cbb03f37b3ca85f25173581456b9376545d54947 7516 rsetup-config-rgb0-rainbow_0.4.12_all.deb
  ec782ca8efff0b6ccadca5097dc67a72774b5a5c 7432 rsetup-config-thermal-governor-step-wise_0.4.12_all.deb
  1f7d40cb614b5f0f2cb5e39cd9b2b2be738e3339 7472 rsetup-config-wan-led-enp1s0_0.4.12_all.deb
  3332cebf59fb8515f42db2c074c12f855fae7a91 7476 rsetup-config-wan-led-eth0_0.4.12_all.deb
- a0ab193f35519bfa04f9e7c5137355c4267e6b47 28988 rsetup_0.4.12_all.deb
+ 653515d50de8a38939c2de40865325ac22b1e9f4 28972 rsetup_0.4.12_all.deb
 Checksums-Sha256:
  29fe38f4039c19e975b16c7a456dece471e5994fa85bdd7cc8c5534df96daa2c 7536 rsetup-config-aic8800-ttys1_0.4.12_all.deb
- a0fd9a6ff7861bc5d15709ab5f945ee98c1bdace7667ca5ec88aaf73b767cbb7 8236 rsetup-config-first-boot_0.4.12_all.deb
+ 75d2e7a72a67116e88e130786f6d05c68ef10680e7bc6470b11488297abb18f6 8248 rsetup-config-first-boot_0.4.12_all.deb
  70d201bb2ac85bd089828ee47cef707842d23709b1a649966f26d8815ea0f47b 7476 rsetup-config-lan-led-enp1s0_0.4.12_all.deb
  acb9b873029d93f2fa75bf6e63d2478ea2101651611c334ffaaacaf6be50045a 7476 rsetup-config-lan-led-eth0_0.4.12_all.deb
  4509dbc8ff42e4533f40af639c5a69711725e2f2b88bc15a7e0c08e28d03a3e5 7516 rsetup-config-rgb0-rainbow_0.4.12_all.deb
  223c83522039794996332afbe489df365652c0cb20b148d3bd9e0a5afea4739c 7432 rsetup-config-thermal-governor-step-wise_0.4.12_all.deb
  6baac254b55b3f3c7cca13fadde323e5b29a59fb525581d48c897d6ec20d1594 7472 rsetup-config-wan-led-enp1s0_0.4.12_all.deb
  d4738c66068222bb53019b9eddb7551f1890963b9f583fdf47604d8381476273 7476 rsetup-config-wan-led-eth0_0.4.12_all.deb
- 0054dee29f95d04e50944d6a722ca01d2e311f4ae11fe81569a04120aac3a13f 28988 rsetup_0.4.12_all.deb
+ b42c817542764542e8f81eef08dd3ea20d8bd94793f70db2dab2727efdcbc826 28972 rsetup_0.4.12_all.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Tue, 25 Feb 2025 08:29:05 +0100
+Build-Date: Tue, 25 Feb 2025 12:56:01 +0100
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
  usr-local-has-programs
