@@ -248,13 +248,13 @@ actions:
       set -e
       echo "/dev/mmcblk1 0x3f8000 0x8000" > /etc/fw_env.config
       
-  - action: run
-    description: Create service reset bootcount
-    chroot: true
-    command: |
-      set -e
-      mkdir -p /etc/custom_scripts && cp custom_script/reset_bootcount.sh $_
-      cp -r services/* /etc/systemd/system
+  # - action: run
+  #   description: Create service reset bootcount
+  #   chroot: true
+  #   command: |
+  #     set -e
+  #     mkdir -p /etc/custom_scripts && cp custom_script/reset_bootcount.sh $_
+  #     cp -r services/* /etc/systemd/system
   - action: run
     description: Product specific setup
     chroot: true
