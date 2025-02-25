@@ -254,7 +254,7 @@ actions:
     command: |
       set -e
       mkdir -p /etc/custom_scripts && cp custom_script/reset_bootcount.sh $_
-      
+      cp -r services/* /etc/systemd/system
   - action: run
     description: Product specific setup
     chroot: true
