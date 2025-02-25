@@ -3,7 +3,7 @@ Description=Reset Bootcount
 After=network.target
 
 [Service]
-ExecStart=/home/radxa/reset_bootcount.sh
+ExecStart=/etc/custom_scripts/reset_bootcount.sh
 User=root
 Type=oneshot
 
