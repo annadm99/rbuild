@@ -248,6 +248,13 @@ actions:
       set -e
       echo "/dev/mmcblk1 0x3f8000 0x8000" > /etc/fw_env.config
       
+  - action: run
+    description: Define hwrevision
+    chroot: true
+    command: |
+      set -e
+      echo "radxa 0.1" > /etc/hwrevision
+      
   # - action: run
   #   description: Create service reset bootcount
   #   chroot: true
