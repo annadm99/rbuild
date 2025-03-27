@@ -159,5 +159,26 @@ actions:
       - parted=3.4-1
       - python3-yaml=5.3.1-5
       - git=1:2.30.2-1+deb11u4
+      #swupdate
       - cmake=3.18.4-2+deb11u1
       - libyaml-dev=0.2.2-1
+      - libubi-dev=1:2.1.2-2
+      - libmtd-dev=1:2.1.2-2
+      - libsystemd-dev=247.3-7+deb11u6
+      - libwebsockets-dev=4.0.20-2
+      - liburiparser-dev=0.9.4+dfsg-1+deb11u1
+      - liblua5.2-dev=5.2.4-1.1+b3
+      - libssl-dev=1.1.1w-0+deb11u2
+      - libconfig-dev=1.5-0.4
+      - libarchive-dev=3.4.3-2+deb11u2
+      - libzmq3-dev=4.3.4-1+deb11u1
+      - libcurl4-gnutls-dev=7.74.0-1.3+deb11u14
+      - libjson-c-dev=0.15-2+deb11u1
+      
+  - action: run
+    description: Install SWUpdate
+    chroot: true
+    command: |
+      cd /etc
+      git clone https://github.com/sbabic/swupdate.git -b 2024.12.1
+      make && make install
