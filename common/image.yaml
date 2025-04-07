@@ -247,6 +247,15 @@ actions:
     command: |
       set -e
       echo "/dev/mmcblk1 0x3f8000 0x8000" > /etc/fw_env.config
+
+    - action: run
+    description: Create SwUpdate directories
+    chroot: true
+    command: |
+      set -e
+      mkdir /tmp/datadst
+      mkdir /tmp/scripts
+      mkdir /tmp/swupdate.env
       
   - action: run
     description: Define hwrevision
