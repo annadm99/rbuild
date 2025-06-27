@@ -258,11 +258,12 @@ actions:
       mkdir /tmp/swupdate.env
       
   - action: run
-    description: Define hwrevision
+    description: Define hwrevision & sw version
     chroot: true
     command: |
       set -e
       echo "radxa 0.1" > /etc/hwrevision
+      echo "v202506271757" > /config/sw_version.txt
       
   # - action: run
   #   description: Create service reset bootcount
