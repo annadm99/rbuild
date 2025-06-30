@@ -91,8 +91,8 @@ actions:
     chroot: true
     command: |
       set -e
-      mkdir -p /etc/custom_scripts && cp custom_script/reset_bootcount.sh $_
-      cp -r services/reset_bootcount.service /etc/systemd/system/reset_bootcount.service
+      mkdir -p /etc/custom_scripts && cp custom_script/reset_bootcount.sh /etc/custom_scripts/
+      cp -r services/reset_bootcount.service /etc/systemd/system/
 
   - action: recipe
     description: Clean up rootfs
