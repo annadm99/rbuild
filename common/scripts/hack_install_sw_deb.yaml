@@ -9,6 +9,12 @@ actions:
     source: ../.packages/{{ $name }}
     destination: /{{ $name }}
   - action: run
+    description: Install build dependencies
+    chroot: true
+    command: |
+      apt-get update
+      apt-get install -y cmake make gcc g++ build-essential git
+  - action: run
     description: Install deb package
     chroot: true
     command: |
