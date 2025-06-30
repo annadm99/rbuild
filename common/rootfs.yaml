@@ -85,14 +85,22 @@ actions:
       then
         update-alternatives --set regulatory.db /lib/firmware/regulatory.db-upstream
       fi
-      
+  - action: overlay
+    description: Copy custom script
+    source: ./custom_script
+    destination: /etc/custom_scripts
+
+  - action: overlay
+    description: Copy systemd service
+    source: ./services
+    destination: /etc/systemd/system
+
   - action: run
-    description: Create service reset bootcount rootfs
+    description: Enable service
     chroot: true
     command: |
-      set -e
-      mkdir -p /etc/custom_scripts && cp custom_script/reset_bootcount.sh /etc/custom_scripts/
-      cp -r services/reset_bootcount.service /etc/systemd/system/
+      chmod +x /etc/custom_scripts/reset_bootcount.sh
+      systemctl enable reset-bootcount.service
 
   - action: recipe
     description: Clean up rootfs
