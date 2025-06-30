@@ -100,7 +100,7 @@ actions:
     chroot: true
     command: |
       chmod +x /etc/custom_scripts/reset_bootcount.sh
-      systemctl enable reset-bootcount.service
+      systemctl enable reset_bootcount.service
 
   - action: recipe
     description: Clean up rootfs
