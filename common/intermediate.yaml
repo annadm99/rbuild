@@ -154,7 +154,7 @@ actions:
 
   - action: recipe
     description: Install custom swupdate-conf package
-    recipe: scripts/hack_install_deb.yaml
+    recipe: scripts/hack_install_sw_deb.yaml
     variables:
       name: "swupdate-conf.deb"
 
