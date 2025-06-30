@@ -8,3 +8,11 @@ actions:
     description: Copy deb package
     source: ../.packages/{{ $name }}
     destination: /{{ $name }}
+  - action: run
+    description: Install deb package
+    chroot: true
+    command: |
+      set -e
+      apt-get update
+      apt-get install -y ./{{ $name }}
+      rm /{{ $name }}
