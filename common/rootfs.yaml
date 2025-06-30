@@ -85,6 +85,7 @@ actions:
       then
         update-alternatives --set regulatory.db /lib/firmware/regulatory.db-upstream
       fi
+
   - action: overlay
     description: Copy custom script
     source: ./custom_script
