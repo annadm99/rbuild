@@ -153,8 +153,8 @@ actions:
       name: "rsetup_first_boot.deb"
 
     - action: recipe
-      description: Install custom swupdate_conf package
-      recipe: scripts/hack_install_deb.yaml
+      description: Install custom swupdate-conf package
+      recipe: scripts/hack_install-deb.yaml
       variables:
         name: "swupdate_conf.deb"
 
