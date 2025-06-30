@@ -248,7 +248,7 @@ actions:
       set -e
       echo "/dev/mmcblk1 0x3f8000 0x8000" > /etc/fw_env.config
 
-    - action: run
+  - action: run
     description: Create SwUpdate directories
     chroot: true
     command: |
