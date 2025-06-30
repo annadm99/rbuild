@@ -440,7 +440,7 @@ main() {
         cp  "$SCRIPT_DIR/common/custom_packages/rsetup/rsetup-config-first-boot_0.4.12_all.deb" "$SCRIPT_DIR/common/.packages/rsetup_first_boot.deb"
 
         echo "Using custom firmware for swupdate ..."
-        cp  "$SCRIPT_DIR/common/custom_packages/swupdate-conf/swupdate-conf_0.1-12_all.deb" "$SCRIPT_DIR/common/.packages/swupdate_conf.deb"
+        cp  "$SCRIPT_DIR/common/custom_packages/swupdate-conf/swupdate-conf_0.1-12_all.deb" "$SCRIPT_DIR/common/.packages/swupdate-conf.deb"
     }
     while true
     do
