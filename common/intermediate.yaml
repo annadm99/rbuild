@@ -152,11 +152,11 @@ actions:
     variables:
       name: "rsetup_first_boot.deb"
 
-    - action: recipe
-      description: Install custom swupdate-conf package
-      recipe: scripts/hack_install-deb.yaml
-      variables:
-        name: "swupdate_conf.deb"
+  - action: recipe
+    description: Install custom swupdate-conf package
+    recipe: scripts/hack_install-deb.yaml
+    variables:
+      name: "swupdate_conf.deb"
 
   - action: recipe
     description: Clean up rootfs
