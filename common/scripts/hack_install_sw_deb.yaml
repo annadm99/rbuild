@@ -1,0 +1,10 @@
+{{- $name := .name -}}
+
+{{- $architecture := .architecture -}}
+architecture: {{ $architecture }}
+
+actions:
+  - action: overlay
+    description: Copy deb package
+    source: ../.packages/{{ $name }}
+    destination: /{{ $name }}
